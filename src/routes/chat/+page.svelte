@@ -33,6 +33,7 @@
 	const reset = () => {
 		talks.set([]);
 		session_id.set(nanoid());
+		loading = false;
 		error = false;
 	};
 </script>
@@ -51,11 +52,11 @@
 		<div>GPT-3.5が考え中...</div>
 	{/if}
 	{#if error}
-		<div>
-			<div class="text-red-500">エラーが発生しました。</div>
+		<div class="flex justify-between items-center">
+			<p class="text-red-500 flex-grow">エラーが発生しました。</p>
 			<button
 				on:click={reset}
-				class="text-white absolute right-2.5 bottom-2.5 bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 text-sm px-4 py-2"
+				class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 text-sm px-4 py-2"
 				>リセット</button
 			>
 		</div>
