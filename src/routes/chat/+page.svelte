@@ -51,18 +51,20 @@
 		<div>GPT-3.5が考え中...</div>
 	{/if}
 	{#if error}
-		<div class="text-red-500">エラーが発生しました。</div>
-		<button
-			on:click={reset}
-			class="text-white absolute right-2.5 bottom-2.5 bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 text-sm px-4 py-2"
-			>リセット</button
-		>
+		<div>
+			<div class="text-red-500">エラーが発生しました。</div>
+			<button
+				on:click={reset}
+				class="text-white absolute right-2.5 bottom-2.5 bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 text-sm px-4 py-2"
+				>リセット</button
+			>
+		</div>
 	{/if}
 	<div class="fixed bottom-0 left-0 w-full p-3">
 		<div class="relative">
 			<input
 				bind:value={message}
-				on:keydown={sendMessage}
+				on:keydown={(event) => event.key === 'Enter' && sendMessage()}
 				class="block w-full p-4 text-gray-900 border border-gray-300 bg-gray-50 focus:ring-green-500 focus:border-green-500"
 			/>
 			<button
