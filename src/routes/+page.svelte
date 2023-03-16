@@ -13,9 +13,7 @@
 	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 	<ul class="max-w-md list-disc list-inside">
 		<li>
-			<a href="/chat" class:active={pathname === '/chat'} class="text-blue-600 hover:underline"
-				>Start chat with GPT-3.5</a
-			>
+			<a href="/chat" class="text-blue-500 hover:underline">Start chat with GPT-3.5</a>
 		</li>
 	</ul>
 </main>

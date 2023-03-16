@@ -38,10 +38,13 @@
 </script>
 
 <main class="m-5">
+	<a href="/" class="text-blue-500 hover:underline">{'<'} Back to top</a>
 	<h1 class="text-3xl font-bold">Chat with GPT-3.5</h1>
 	<ul class="max-w-md p-3 list-disc list-inside">
 		{#each $talks as talk}
 			<li>{talk.message}</li>
+		{:else}
+			<p>下の入力欄からなにか送ってみてください！</p>
 		{/each}
 	</ul>
 	{#if loading}
