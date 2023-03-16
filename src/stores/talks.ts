@@ -3,7 +3,7 @@ import { writable } from 'svelte/store';
 
 type Talk = {
 	role: 'user' | 'assistant';
-	message: string;
+	content: string;
 };
 const localData = browser ? window.localStorage.getItem('momemo-talks') : null;
 const initialValue: Talk[] = localData ? JSON.parse(localData) : [];

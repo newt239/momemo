@@ -9,20 +9,18 @@
 	let error: boolean = false;
 
 	const sendMessage = async () => {
-		talks.update((v) => [...v, { role: 'user', message }]);
+		talks.update((v) => [...v, { role: 'user', content: message }]);
 		loading = true;
 		try {
-			const response = await fetch('https://api.newt239.dev/openai/gpt-3_5', {
+			const response = await fetch('https://api.newt239.dev/openai/gpt-3_5-with-logs', {
 				method: 'POST',
 				body: JSON.stringify({
-					message: message,
-					user_id: 'momemo',
-					session_id: $session_id
+					messages: $talks
 				})
 			});
 			const data = await response.json();
 			message = '';
-			talks.update((v) => [...v, { role: 'assistant', message: data.choices[0].message.content }]);
+			talks.update((v) => [...v, { role: 'assistant', content: data.choices[0].message.content }]);
 			loading = false;
 		} catch (e) {
 			loading = false;
@@ -43,7 +41,7 @@
 	<h1 class="text-3xl font-bold">Chat with GPT-3.5</h1>
 	<ul class="max-w-md p-3 list-disc list-inside mb-20">
 		{#each $talks as talk}
-			<li>{talk.message}</li>
+			<li>{talk.role}: {talk.content}</li>
 		{:else}
 			<p>下の入力欄からなにか送ってみてください！</p>
 		{/each}
