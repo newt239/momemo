@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { nanoid } from 'nanoid';
-	import session_id from '../../stores/session';
-	import talks from '../../stores/talks';
+	import session_id from '~/stores/session';
+	import talks from '~/stores/talks';
 
 	let message: string = '';
 

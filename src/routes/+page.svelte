@@ -1,8 +1,3 @@
-<script>
-	import { page } from '$app/stores';
-	$: pathname = $page.url.pathname;
-</script>
-
 <main class="m-5">
 	<h1 class="text-3xl font-bold">
 		Welcome to <span
@@ -12,6 +7,9 @@
 	</h1>
 	<div class="p-3">
 		<ul class="max-w-md list-disc list-inside">
+			<li>
+				<a href="/note" class="text-blue-500 hover:underline">note</a>
+			</li>
 			<li>
 				<a href="/chat" class="text-blue-500 hover:underline">Start chat with GPT-3.5</a>
 			</li>

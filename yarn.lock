@@ -318,6 +318,50 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@prisma/client@npm:^4.12.0":
+  version: 4.12.0
+  resolution: "@prisma/client@npm:4.12.0"
+  dependencies:
+    "@prisma/engines-version": "npm:4.12.0-67.659ef412370fa3b41cd7bf6e94587c1dfb7f67e7"
+  peerDependencies:
+    prisma: "*"
+  peerDependenciesMeta:
+    prisma:
+      optional: true
+  checksum: 0e223ce99bf8c499f48fabf86c32c2d0ce2fac84f9689d428b8e7f75539699877b1442c2f433460779ac5339ac6d3675bebcaecda7bba1a4f67ae1ed352fa874
+  languageName: node
+  linkType: hard
+
+"@prisma/engines-version@npm:4.12.0-67.659ef412370fa3b41cd7bf6e94587c1dfb7f67e7":
+  version: 4.12.0-67.659ef412370fa3b41cd7bf6e94587c1dfb7f67e7
+  resolution: "@prisma/engines-version@npm:4.12.0-67.659ef412370fa3b41cd7bf6e94587c1dfb7f67e7"
+  checksum: 49dec9a3aec6cfec60d58787cd3c1c0a6e15a45ec222aacd40466ca27d367c30fb7565ff18be32cd3abe1b045444d2c40d55c00ba5180c271aafa4b9c7e2361f
+  languageName: node
+  linkType: hard
+
+"@skeletonlabs/skeleton@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@skeletonlabs/skeleton@npm:1.1.0"
+  dependencies:
+    svelte: "npm:^3.55.1"
+  checksum: ddca369367e6fc590669c3e232c51fa95bf8616bd03c0abbd480275ed1f295a239cda34dbe058a3d7341cef588dc675d0d03b41548bbd7c2d34f197d4264dd77
+  languageName: node
+  linkType: hard
+
+"@steeze-ui/heroicons@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "@steeze-ui/heroicons@npm:2.2.2"
+  checksum: 57957b58324581a91fd626acfe38e09f8f4a134ce462cacbd2b72ad0d2fe1dd398e2aace8de20b750a4c8d3fc8f652955f998cda74647b25879221253fbd45ae
+  languageName: node
+  linkType: hard
+
+"@steeze-ui/svelte-icon@npm:^1.3.2":
+  version: 1.3.2
+  resolution: "@steeze-ui/svelte-icon@npm:1.3.2"
+  checksum: e3fbc72aae1d10217c40aaa865abc88e2a52a0b6215fe30b378c49837a7a0a252f0962ecbd7bc9b1198091a6333597a05414248ac9ef1eb02aa02abf2194bc36
+  languageName: node
+  linkType: hard
+
 "@sveltejs/adapter-netlify@npm:1.0.0-next.88":
   version: 1.0.0-next.88
   resolution: "@sveltejs/adapter-netlify@npm:1.0.0-next.88"
@@ -331,9 +375,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/kit@npm:^1.5.0":
-  version: 1.11.0
-  resolution: "@sveltejs/kit@npm:1.11.0"
+"@sveltejs/kit@npm:^1.15.0":
+  version: 1.15.0
+  resolution: "@sveltejs/kit@npm:1.15.0"
   dependencies:
     "@sveltejs/vite-plugin-svelte": "npm:^2.0.0"
     "@types/cookie": "npm:^0.5.1"
@@ -347,13 +391,13 @@ __metadata:
     set-cookie-parser: "npm:^2.5.1"
     sirv: "npm:^2.0.2"
     tiny-glob: "npm:^0.2.9"
-    undici: "npm:5.20.0"
+    undici: "npm:5.21.0"
   peerDependencies:
     svelte: ^3.54.0
     vite: ^4.0.0
   bin:
     svelte-kit: svelte-kit.js
-  checksum: 93bfb653c9e6229d9bf73bdbd8b95d5840f6d265a80e9af1ff5855334a60ca48ad82a207dd57711e5b2f4446336c8207225e2b1ec9e14cb7905361eb5d65638e
+  checksum: 806a2dbf53fd2c6bb0681eedaf933d031ff824b042737daecc2712edcc14bf55151f41d12032353c90c7fa38a831c6afb045c4b15a670e504c261349f8c1e7c0
   languageName: node
   linkType: hard
 
@@ -1220,6 +1264,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-tailwindcss@npm:^3.10.3":
+  version: 3.10.3
+  resolution: "eslint-plugin-tailwindcss@npm:3.10.3"
+  dependencies:
+    fast-glob: "npm:^3.2.5"
+    postcss: "npm:^8.4.4"
+  peerDependencies:
+    tailwindcss: ^3.2.2
+  checksum: e9f7e1b0aa4f44d136e482af48996bacf16ba1f49cd843df8d066a826be0e489d86c013c18f0bb15bf7eb0e51c835aa9a54edcaebeb2bc840484a85e38a4f86e
+  languageName: node
+  linkType: hard
+
 "eslint-scope@npm:^5.1.1":
   version: 5.1.1
   resolution: "eslint-scope@npm:5.1.1"
@@ -1361,7 +1417,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.2.12, fast-glob@npm:^3.2.7, fast-glob@npm:^3.2.9":
+"fast-glob@npm:^3.2.12, fast-glob@npm:^3.2.5, fast-glob@npm:^3.2.7, fast-glob@npm:^3.2.9":
   version: 3.2.12
   resolution: "fast-glob@npm:3.2.12"
   dependencies:
@@ -2101,8 +2157,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "momemo@workspace:."
   dependencies:
+    "@prisma/client": "npm:^4.12.0"
+    "@skeletonlabs/skeleton": "npm:^1.1.0"
+    "@steeze-ui/heroicons": "npm:^2.2.2"
+    "@steeze-ui/svelte-icon": "npm:^1.3.2"
     "@sveltejs/adapter-netlify": "npm:1.0.0-next.88"
-    "@sveltejs/kit": "npm:^1.5.0"
+    "@sveltejs/kit": "npm:^1.15.0"
     "@types/eslint": "npm:^8"
     "@types/prettier": "npm:^2"
     "@typescript-eslint/eslint-plugin": "npm:^5.55.0"
@@ -2111,15 +2171,16 @@ __metadata:
     eslint: "npm:^8.36.0"
     eslint-config-prettier: "npm:^8.7.0"
     eslint-plugin-svelte3: "npm:^4.0.0"
+    eslint-plugin-tailwindcss: "npm:^3.10.3"
     nanoid: "npm:^4.0.1"
     postcss: "npm:^8.4.21"
     prettier: "npm:^2.8.4"
     prettier-plugin-svelte: "npm:^2.9.0"
-    svelte: "npm:^3.57.0"
+    svelte: "npm:^3.54.0"
     svelte-check: "npm:^3.0.1"
     tailwindcss: "npm:^3.2.7"
     tslib: "npm:^2.5.0"
-    typescript: "npm:^4.9.5"
+    typescript: "npm:^4.9.3"
     vite: "npm:^4.0.0"
   languageName: unknown
   linkType: soft
@@ -2447,7 +2508,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.0.9, postcss@npm:^8.4.21":
+"postcss@npm:^8.0.9, postcss@npm:^8.4.21, postcss@npm:^8.4.4":
   version: 8.4.21
   resolution: "postcss@npm:8.4.21"
   dependencies:
@@ -2945,10 +3006,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^3.57.0":
-  version: 3.57.0
-  resolution: "svelte@npm:3.57.0"
-  checksum: b2ffbd998af34a51089d3c852f8306afa71aeb925a57337dd90d643b0c90206e688db0b140afba47833bd14bb57fccfd1c19ba83acd05a78c424c2f148526082
+"svelte@npm:^3.54.0, svelte@npm:^3.55.1":
+  version: 3.58.0
+  resolution: "svelte@npm:3.58.0"
+  checksum: cc3ef8f5b28fd806304fc2ac2cbf13f9f1830efed554ca20a41906ae2457d35112640ac0507b186aefc43360055e55a813b1d74687759ce15e57d497143bb4c3
   languageName: node
   linkType: hard
 
@@ -3076,7 +3137,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.9.4, typescript@npm:^4.9.5":
+"typescript@npm:^4.9.3, typescript@npm:^4.9.4":
   version: 4.9.5
   resolution: "typescript@npm:4.9.5"
   bin:
@@ -3086,7 +3147,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^4.9.4#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^4.9.5#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A^4.9.3#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^4.9.4#optional!builtin<compat/typescript>":
   version: 4.9.5
   resolution: "typescript@patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=23ec76"
   bin:
@@ -3096,12 +3157,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:5.20.0":
-  version: 5.20.0
-  resolution: "undici@npm:5.20.0"
+"undici@npm:5.21.0":
+  version: 5.21.0
+  resolution: "undici@npm:5.21.0"
   dependencies:
     busboy: "npm:^1.6.0"
-  checksum: b307c8aa8ca8858f814cb3c1bfcdc34ae2e6da38838b47d36f722555014f0519e18daaa981df7029fd51f314a59eb35375de9be275873ee94e6345c8bc1de488
+  checksum: d312210d63d9bcd541e7476cb60f513a5da9aa5473890bf77a26ae44d9ebb50655da2ed92544a107c1be3570cfe32279332123e6ee55563b2c14fef65d6ac53d
   languageName: node
   linkType: hard
 
