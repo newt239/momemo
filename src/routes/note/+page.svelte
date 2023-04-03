@@ -7,16 +7,16 @@
 </script>
 
 <main>
-	<h1>Notes</h1>
+	<h2 class="text-5xl font-black">ノートを投稿</h2>
+
+	<form method="POST" class="p-4">
+		<Input label="本文" name="content" />
+		<Button type="submit">投稿する</Button>
+	</form>
 
 	<ul>
 		{#each data.notes as note}
 			<li>{note.content}</li>
 		{/each}
 	</ul>
-
-	<form method="POST" class="p-4">
-		<Input label="本文" name="content" />
-		<Button type="submit">投稿する</Button>
-	</form>
 </main>
