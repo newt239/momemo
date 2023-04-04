@@ -37,7 +37,7 @@
 </script>
 
 <main>
-	<h2 class="text-5xl font-black">Chat with GPT-3.5</h2>
+	<h2 class="text-5xl font-black">AIとおしゃべり</h2>
 	{#if $talks.length === 0}
 		<p class="p-2">下の入力欄からなにか送ってみてください！</p>
 	{/if}
